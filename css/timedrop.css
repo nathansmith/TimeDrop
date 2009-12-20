@@ -1,0 +1,108 @@
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	color: #333;
+	font: 13px Arial, sans-serif;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+h1,
+p {
+	margin: 0 0 20px;
+}
+
+img {
+	border: 0;
+	font-size: 0;
+}
+
+small {
+	font-size: 10px;
+}
+
+/* Base padding. */
+#container {
+	padding: 20px;
+}
+
+/* `TimeDrop
+----------------------------------------------------------------------------------------------------*/
+
+.timedrop_trigger {
+	background: url(../img/timedrop.png) no-repeat -9999px -9999px;
+}
+
+#timedrop,
+#timedrop * {
+	list-style: none;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+#timedrop {
+	background: url(../img/timedrop.png) no-repeat;
+	display: none;
+	padding: 12px 5px 5px;
+	position: absolute;
+	z-index: 9999;
+	top: -9999px;
+	left: -9999px;
+}
+
+#timedrop_scroll {
+	background: #fff;
+	border: 1px solid #000;
+	font: 11px/20px Arial, sans-serif;
+	text-align: right;
+	width: 85px;
+	height: 150px;
+	overflow: auto;
+}
+
+#timedrop_divider {
+	border-top: 1px solid #ccc;
+}
+
+#timedrop a {
+	color: #000;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	padding: 0 10px 0 0;
+	text-decoration: none;
+	white-space: nowrap;
+	height: 20px;
+}
+
+#timedrop a:hover {
+	background: #06f;
+	color: #fff;
+}
+
+/* `IE6 Fixes
+----------------------------------------------------------------------------------------------------*/
+
+* html #timedrop {
+	background: #666;
+	padding-top: 5px;
+}
+
+* html .timedrop_trigger {
+	background: none;
+}
